@@ -1,0 +1,8 @@
+path: C:/Users/AISW_203_115/Desktop/새 학습 차번호판탐지 yolo학습/test
+
+train: images
+val: images
+test: images
+
+names:
+  0: license_plate

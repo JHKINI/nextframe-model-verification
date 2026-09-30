@@ -165,7 +165,7 @@ nextframe-model-verification/
 │       └── 03_위치정밀도_낮은검출/  ← 대표 10장
 │
 └── portfolio/
-        └── 차량_번호판_검출_포트폴리오.pptx
+        └── 차량_번호판_검출_독립검증.pptx
 🎯 Verification Result
 
 이번 검증을 통해 기존 모델의 성능을

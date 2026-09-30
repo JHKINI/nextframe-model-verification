@@ -139,21 +139,33 @@ Bounding Box 위치 및 크기 정밀도
 실제 검출 상황을 함께 분석했습니다.
 
 📁 Repository Structure
-nextframe-model-verification
+nextframe-model-verification/
 │
 ├── README.md
 │
 ├── verification/
+│   ├── remove_orphan_labels.py
 │   ├── test.yaml
 │   ├── error_analysis.py
 │   └── error_analysis.csv
 │
 ├── results/
 │   ├── metrics/
+│   │   ├── BoxF1_curve.png
+│   │   ├── BoxP_curve.png
+│   │   ├── BoxPR_curve.png
+│   │   ├── BoxR_curve.png
+│   │   ├── confusion_matrix.png
+│   │   ├── confusion_matrix_normalized.png
+│   │   └── val_batch*_labels/pred.jpg
+│   │
 │   └── error_analysis/
+│       ├── 01_FN_놓친번호판/
+│       ├── 02_FP_잘못검출/
+│       └── 03_위치정밀도_낮은검출/  ← 대표 10장
 │
 └── portfolio/
-    └── 차량_번호판_검출_포트폴리오.pptx
+        └── 차량_번호판_검출_포트폴리오.pptx
 🎯 Verification Result
 
 이번 검증을 통해 기존 모델의 성능을
